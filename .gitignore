@@ -1,0 +1,13 @@
+﻿.pytest/
+venv/
+.venv/
+.idea/
+.pytest_cache/
+__pycache__/
+.vscode/
+.idea/
+file_name.txt
+*.doc
+*.docx
+# игнорировать файл release.properties в директории target
+target/release.properties
