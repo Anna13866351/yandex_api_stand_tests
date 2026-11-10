@@ -20,10 +20,11 @@ def post_new_user(body):
 
 def post_new_client_kit(kit_body, auth_token):
     # Создание личного набора для пользователя
+    # Копируем заголовки из data, чтобы не менять исходный словарь
+    headers_kit = data.headers_user.copy()
+    # Добавляем заголовок авторизации с токеном
+    headers_kit["Authorization"] = "Bearer " + auth_token
     return requests.post(
         configuration.URL_SERVICE + configuration.KITS_PATH,
         json=kit_body,
-        headers={
-            "Content-Type": "application/json",
-            "Authorization": "Bearer " + auth_token
-        })
+        headers=headers_kit)

@@ -10,3 +10,6 @@
 - `create_kit_name_kit_test.py` — тесты по чек-листу (11 проверок).
 - `.gitignore` — игнорируемые файлы.
 - `README.md` — этот файл.
+
+#Ссылка на github
+git@github.com:Anna13866351/yandex_api_stand_tests.git
